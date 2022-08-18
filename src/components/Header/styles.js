@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-heigth: 150px;
+height: 150px;
 text-align: center;
-background: teal
+background: teal;
 `;
 
 
