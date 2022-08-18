@@ -1,20 +1,20 @@
 import React from 'react';
-import Resumeitem from '../resumeitem';
+import ResumeItem from "../Resumeitem";
 import * as C from "./styles";
 import { 
         FaChevronCircleUp,
-         FaChevronCircleDown,
-         FaChild,
-         FaDollarSign,
+        FaChevronCircleDown,
+        FaDollarSign,
 } from "react-icons/fa";
+
 const Resume = () => {
   return (
     <C.Container>
-      <Resumeitem title="Entradas" Icon={FaChevronCircleUp} />
-      <Resumeitem title="Saidas" Icon={FaChevronCircleDown} />
-      <Resumeitem title="Total" Icon={FaDollarSign} />
+      <ResumeItem title="Entradas" Icon={FaChevronCircleUp} value="1000" />
+      <ResumeItem title="Saidas" Icon={FaChevronCircleDown} value="1000"/>
+      <ResumeItem title="Total" Icon={FaDollarSign} value="1000"/>
     </C.Container>
-  )
-}
+  );
+};
 
 export default Resume;
