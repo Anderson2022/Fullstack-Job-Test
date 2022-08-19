@@ -22,7 +22,7 @@ export const Th = styled.th`
     text-align: start;
     border-bottom: inset;
     padding-bottom: 5px;
-    text-aligh: ${(props) -> (pros.alignCenter ? "center" : "start")};
+    text-aligh: ${(props) => (pros.alignCenter ? "center" : "start")};
     width: ${(props) => (props.width ? props.width + "%" : "auto")};
 
 
