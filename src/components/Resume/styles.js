@@ -8,6 +8,6 @@ export const Container = styled.div`
  gap: 20px;
  margin-top: -50px;
  justify-content: space-around;
-
+box-shadow: 9px 9px 15px 0px rgba(43,16,16,1);
 `;
 

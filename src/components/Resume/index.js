@@ -1,5 +1,5 @@
 import React from 'react';
-import ResumeItem from "../Resumeitem";
+import ResumeItem from "../ResumeItem";
 import * as C from "./styles";
 import { 
         FaChevronCircleUp,
@@ -7,12 +7,12 @@ import {
         FaDollarSign,
 } from "react-icons/fa";
 
-const Resume = () => {
+const Resume = ( income, expense, total) => {
   return (
     <C.Container>
-      <ResumeItem title="Entradas" Icon={FaChevronCircleUp} value="1000" />
-      <ResumeItem title="Saidas" Icon={FaChevronCircleDown} value="1000"/>
-      <ResumeItem title="Total" Icon={FaDollarSign} value="1000"/>
+      <ResumeItem title="Entradas" Icon={FaChevronCircleUp} value={income} />
+      <ResumeItem title="Saidas" Icon={FaChevronCircleDown} value={expense}/>
+      <ResumeItem title="Total" Icon={FaDollarSign} value={total}/>
     </C.Container>
   );
 };
