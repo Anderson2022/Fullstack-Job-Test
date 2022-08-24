@@ -1,3 +1,5 @@
+
+
 var btnSignin = document.querySelector("#signin");
 var btnSignup = document.querySelector("#signup");
 
@@ -12,27 +14,13 @@ btnSignup.addEventListener("click", function(){
 }
 );
 
+function  logar (){
+var login = document.getElementById('login').value;
+var Password = document.getElementById('Password').value;
 
-    var login = document.getElementById('login').value;
-    var senha = document.getElementById('senha').value;
-    
-
-    app.post('/', (req,res)=>{
-        if(req.body.password == senha  && req.body.login == login){
-            req.session.login = login;
-    }
-        res.render('index');
-    })
-    
-    
-    app.get('/', (req,res) => {
-    if(req.session.login){
-        res.render('formm');
-    }else{
-        res.render('index');
-    }
-    })
-
-    app.listen(port,()=>{
-    console.log('servidor rodando');
-    })
+if(login == "admin" && == "admin"){
+    location.href = "formula.html";
+}else{
+alert('Usuario e senha incorretos')
+}
+}

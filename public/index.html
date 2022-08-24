@@ -49,19 +49,19 @@
                 </div>
                 <p class="description descripiton-second"></p>
                 <form class="form">
-                    <label class="label-input" for="">
+                    <label id="txttexto" class="label-input" for="">
                          <i class="far fa-user icon-modify"></i>
                          <input type="text" placeholder="Name">
                     </label>
-                    <label class="label-input" for="">
+                    <label id="txtmail" class="label-input" for="">
                          <i class="far fa-envelope icon-modify"></i>
                          <input type="e-mail" placeholder="Email">
                     </label>
                     <label class="label-input" for="">
                          <i class="fas fa-lock icon-modify"></i>
-                         <input type="password" placeholder="Password">
+                         <input id="txtsenha" type="password" placeholder="Password">
                     </label>
-                    <button id="" class="btn btn-second">Inscrever-se</button>
+                    <button id="" class="btn btn-second"onclick="logar()">Inscrever-se</button>
                 </form>
             </div>
         </div>
@@ -70,7 +70,7 @@
                 <h2 class="title title-welcome">Ola! Amigos</h2>
                 <p class="descripiton descripiton-primary">Insira os seus dados pessoais </p> 
                 <p class="descripiton descripiton-primary">E comece sua jornada conosco</p> 
-                <button id="signup" class="btn btn-primary">Entrar</button>
+                <button id="signup" class="btn btn-primary" >Entrar</button>
                
              </div>
              <div class="second-column">
@@ -108,11 +108,13 @@
                       
                         <label class="label-input" for="">
                              <i class="fas fa-lock icon-modify"></i>
-                             <input type="password" placeholder="Password" id="senha">
+                             <input type="password" placeholder="Password" id="Password">
                         </label>
                        
                         <a class="password" href="#">esqueceu sua senha?</a>
-                        <button class="btn btn-second" input type="submit" onclick="logar()"  return false">logar</button>
+                        <button class="btn btn-second" >
+                            <input type="submit" onclick="logar(); return false">
+                            logar</button>
                     </form>
              </div>
         </div>
