@@ -4,7 +4,9 @@ import * as C from "./styles";
 
 const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
   const [desc, setDesc] = useState("");
+  const [group, setGroup] = useState("");
   const [amount, setAmount] = useState("");
+  const [vlr , setVlr] = useState("")
   const [isExpense, setExpense] = useState(false);
 
   const generateID = () => Math.round(Math.random() * 1000);
@@ -22,6 +24,8 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
       id: generateID(),
       desc: desc,
       amount: amount,
+      group:  group,
+      vlr: vlr,
       expense: isExpense,
     };
 
@@ -29,17 +33,31 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
 
     setDesc("");
     setAmount("");
+    setGroup("");
+    setVlr("");
   };
 
   return (
     <>
       <C.Container>
-        <C.InputContent>
+      <C.InputContent>
           <C.Label>Descrição</C.Label>
           <C.Input value={desc} onChange={(e) => setDesc(e.target.value)} />
         </C.InputContent>
         <C.InputContent>
+          <C.Label>Grupo</C.Label>
+          <C.Input value={group} onChange={(e) => setGroup(e.target.value)} />
+        </C.InputContent>
+        <C.InputContent>
           <C.Label>Valor</C.Label>
+          <C.Input
+            value={vlr}
+            type="number"
+            onChange={(e) => setVlr(e.target.value)}
+          />
+        </C.InputContent>
+        <C.InputContent>
+          <C.Label>Quantidade</C.Label>
           <C.Input
             value={amount}
             type="number"

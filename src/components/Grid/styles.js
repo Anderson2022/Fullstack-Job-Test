@@ -6,7 +6,7 @@ export const Table = styled.table`
   padding: 20px;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 5px;
-  max-width: 1120px;
+  max-width: 1197px;
   margin: 20px auto;
 `;
 
@@ -21,5 +21,5 @@ export const Th = styled.th`
   border-bottom: inset;
   padding-bottom: 5px;
   text-align: ${(props) => (props.alignCenter ? "center" : "start")};
-  width: ${(props) => (props.width ? props.width + "%" : "auto")};
+  width: 20%; ${(props) => (props.width ? props.width + "%" : "auto")};
 `;

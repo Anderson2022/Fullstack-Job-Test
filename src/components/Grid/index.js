@@ -14,7 +14,11 @@ const Grid = ({ itens, setItens }) => {
       <C.Thead>
         <C.Tr>
           <C.Th width={40}>Descrição</C.Th>
-          <C.Th width={40}>Valor</C.Th>
+          <C.Th width={40}>Grupo</C.Th>
+          <C.Th width={40}>Valor</C.Th> 
+          <C.Th width={40}>Quantidade</C.Th> 
+                   
+                  
           <C.Th width={10} alignCenter>
             Tipo
           </C.Th>

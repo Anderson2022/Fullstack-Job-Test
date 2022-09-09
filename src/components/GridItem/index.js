@@ -10,7 +10,11 @@ const GridItem = ({ item, onDelete }) => {
   return (
     <C.Tr>
       <C.Td>{item.desc}</C.Td>
+      <C.Td>{item.group}</C.Td>
+      <C.Td>{item.vlr}</C.Td>
       <C.Td>{item.amount}</C.Td>
+      
+     
       <C.Td alignCenter>
         {item.expense ? (
           <FaRegArrowAltCircleDown color="red" />
