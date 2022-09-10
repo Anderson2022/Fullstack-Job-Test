@@ -8,10 +8,10 @@ Fiz teste com o postman alguns resultados surgiram mais nada tão conclusivo
  porem, o assunto e muito extenso 
 
 
-Nessecario instala os módulos com npm i compilate 
+Nessecario instala os módulos com npm install compile-run --save
                 E iniciar o projeto npn  start ou yarn start
 
 já o Front-End foi montado, durante a madrugada e metade do dia, não sei se ficou do agrado mais me esforcei para realizá-lo com base nos meus conhecimentos e de algumas documentações.  
 
-Nessecario instala os módulos com npm i compilate 
+Nessecario instala os módulos com npm install compile-run --save
                 E iniciar o projeto npm  start ou yarn start
