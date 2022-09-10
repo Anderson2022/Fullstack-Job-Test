@@ -31,17 +31,7 @@ const GridItem = ({ item, onDelete }) => {
       </C.Td>
       <C.Td alignCenter>
         <FaTrash onClick={() => onDelete(item.id)} />
-        style={{
-              marginTop: "10px",
-              background: "red",
-              fontWeight: "bolder",
-              border: "none",
-              padding: "8px",
-              cursor: "pointer",
-              color: "white",
-              borderRadius: "8px"
-            }}
-            
+       
       </C.Td>
     </C.Tr>
   );
