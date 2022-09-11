@@ -12,3 +12,15 @@ export const Td = styled.td`
     height: 18px;
   }
 `;
+
+export const button = styled.button`
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: #1C2127;
+  
+`;
+
+

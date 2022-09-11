@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as C from "./styles";
 import {
   FaRegArrowAltCircleUp,
@@ -7,12 +7,11 @@ import {
   FaAppStoreIos,
   FaThumbsDown,
 } from "react-icons/fa";
+import Modal from "./Modal/Modal";
+import './Modal/styles.scss';
 
-
-
-
-const GridItem = ({ item, onDelete }) => {
-
+const GridItem = ({ item,  }) => {
+const [isModalVisible, setIsModalVisible] = useState(false);
  
   return (
     <C.Tr>
@@ -28,10 +27,14 @@ const GridItem = ({ item, onDelete }) => {
         ) : (
           <FaRegArrowAltCircleUp color="green" />
         )}
-      </C.Td>
-      <C.Td alignCenter>
-        <FaTrash onClick={() => onDelete(item.id)} />
-       
+         <C.Td alignCenter>
+      </C.Td>     
+        <button onClick={() => setIsModalVisible(true)}>Delete</button>
+       {isModalVisible ? (
+       <Modal>
+        <h2>Modal do App</h2>
+       </Modal>)
+        : null}
       </C.Td>
     </C.Tr>
   );

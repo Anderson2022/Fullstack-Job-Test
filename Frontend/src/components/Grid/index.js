@@ -5,6 +5,8 @@ import * as C from "./styles";
 const Grid = ({ itens, setItens }) => {
   const onDelete = (ID) => {
       
+
+    
     const newArray = itens.filter((transaction) => transaction.id !== ID);
     setItens(newArray);
     localStorage.setItem("transactions", JSON.stringify(newArray));
@@ -27,6 +29,7 @@ const Grid = ({ itens, setItens }) => {
         </C.Tr>
       </C.Thead>
       <C.Tbody>
+        
         {itens?.map((item, index) => (
           <GridItem key={index} item={item} onDelete={onDelete} />
         ))}

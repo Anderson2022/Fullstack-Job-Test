@@ -22,10 +22,10 @@ const App = () => {
       .filter((item) => !item.expense)
       .map((transaction) => Number(transaction.amount));
 
-    const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).toFixed(2);
-    const income = amountIncome.reduce((acc, cur) => acc + cur, 0).toFixed(2);
+    const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).toFixed(0);
+    const income = amountIncome.reduce((acc, cur) => acc + cur, 0).toFixed(0);
 
-    const total = Math.abs(income - expense).toFixed(2);
+    const total = Math.abs(income - expense).toFixed(0);
 
     setIncome(` ${income}`);
     setExpense(` ${expense}`);
