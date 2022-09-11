@@ -9,6 +9,7 @@
     "bootstrap": "^3.4.1",
     "compile-run": "^2.3.4",
     "components": "^0.1.0",
+    "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",

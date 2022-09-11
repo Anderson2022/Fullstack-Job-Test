@@ -10,7 +10,7 @@ import {
 import Modal from "./Modal/Modal";
 import './Modal/styles.scss';
 
-const GridItem = ({ item,  }) => {
+const GridItem = ({ item, onDelete  }) => {
 const [isModalVisible, setIsModalVisible] = useState(false);
  
   return (
@@ -29,10 +29,11 @@ const [isModalVisible, setIsModalVisible] = useState(false);
         )}
          <C.Td alignCenter>
       </C.Td>     
-        <button onClick={() => setIsModalVisible(true)}>Delete</button>
+        <button onClick={() => setIsModalVisible(true)}>Excluir</button>
        {isModalVisible ? (
-       <Modal>
-        <h2>Modal do App</h2>
+       <Modal onClose= {() => setIsModalVisible(false)}>
+        <h2>Quer excluir o item?</h2>        
+        <FaTrash onClick={() => onDelete(item.id)} />
        </Modal>)
         : null}
       </C.Td>

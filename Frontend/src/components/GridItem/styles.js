@@ -8,8 +8,9 @@ export const Td = styled.td`
   word-break: break-all;
 
   svg {
-    width: 18px;
-    height: 18px;
+    width: 25px;
+    height: 25px;
+
   }
 `;
 
@@ -22,5 +23,7 @@ export const button = styled.button`
   background-color: #1C2127;
   
 `;
+
+
 
 
